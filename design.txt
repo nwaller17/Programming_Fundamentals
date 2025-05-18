@@ -1,0 +1,102 @@
+Three Point Challenge Game
+Enter your shooting scores, and see how they stack up to the winner of the
+2 previous NBA 3 point contests, Damian Lillard! 
+Enter "2023" or "2024" when prompted for a contest year to compare your score to 
+the finalists of that year, or if you don't care for the NBA, enter a random number
+to compare your scores to your favorite Looney Tunes characters. Entering "0" for 
+the contest year will end the game, returning a list of your previous scores, and your
+shooting percentage.
+Each normal ball make is worth 1 point, money balls are worth 2, and starry balls 
+are worth 3, per NBA rules.
+
+Have fun playing!
+-Nathan Waller
+
+
+Problem Statement- create a program that asks users for their total makes of each 
+type of ball and a comparison year, and then calculates their shooting percentage and three point contest 
+score. The program will output the users percentage, score, contestant above and below them
+(where applicable) and a result message.
+
+Nouns- total makes, comparison year, ball type, percentage, score, contestant, result
+
+Verbs- asks, calculates, output
+
+Inputs- makes for ball type, comparison year
+
+Processing-
+prompt user for comparison year
+prompt user for makes of each type
+calculate user score using equation with point values
+calculate user percentage (total makes/27)
+calculate comparable contestants
+calculate result
+output the score, percentage, contestants and results
+
+Outputs- score, percentage, contestants, result message
+
+Solution Algorithm-
+ThreePointChallenge
+  LOOP while contestYear !==0
+    prompt user for comparison year
+	prompt user for normal makes
+	prompt user for money makes
+	prompt user for starry makes
+	calculate user score
+	calculate user percentage
+	convert percentage to rounded percentage (2 decimals)
+	calculate contestants above, below and results
+  END LOOP
+  output userScore, roundedPercentage, contestantAbove, contestantBelow, result message
+END
+
+Test Case 1-
+
+Inputs- 2023, 10, 4, 0, 0, 16, 9, 2
+
+Expected Output-
+You scored 18 points, which is more than Tyrese Haliburton and less than Buddy Hield. You shot 51.85% from three. Keep trying!
+You scored 40 points, which is more than Bugs Bunny and less than Porky Pig. You shot 100.00% from three. Thanks for playing!
+
+Actual Output- 
+You scored 18 points, which is more than Tyrese Haliburton and less than Buddy Hield. You shot 51.85% from three. Keep trying!
+You scored 40 points, which is more than Bugs Bunny and less than Porky Pig. You shot 100.00% from three. Thanks for playing!
+
+Test Case 2
+
+Inputs- 0, 0, 0, 0
+
+Expected Output- You scored 0 points, which is more than nobody ever and less than everybody ever. You shot 0.00% from three. Thanks for playing!
+
+Actual Output- You scored 0 points, which is more than nobody ever and less than everybody ever. You shot 0.00% from three. Thanks for playing!
+
+Test Case 3-
+
+Inputs- 2024, 11, 6, 1, 0, 0, 0, 0
+
+Expected Output- 
+You scored 26 points, which is more than Damian Lillard and less than nobody. You shot 66.67% from three. Congratulations!
+You scored 0 points, which is more than nobody ever and less than everybody ever. You shot 0.00% from three. Thanks for playing!
+
+Actual Output- 
+You scored 26 points, which is more than Damian Lillard and less than nobody. You shot 66.67% from three. Congratulations!
+You scored 0 points, which is more than nobody ever and less than everybody ever. You shot 0.00% from three. Thanks for playing!
+
+Test Case 4- 
+
+Inputs- 2011, 1, 1, 1, 2012, 8, 8, 2, 2013, 15, 8, 1, 0, 0, 0, 0
+
+Expected Output- 
+You scored 6 points, which is more than Daffy Duck and less than Bugs Bunny. You shot 11.11% from three. Thanks for playing!
+You scored 30 points, which is more than Bugs Bunny and less than Porky Pig. You shot 66.67% from three. Thanks for playing!
+You scored 34 points, which is more than Bugs Bunny and less than Porky Pig. You shot 88.89% from three. Thanks for playing!
+You scored 0 points, which is more than nobody ever and less than everybody ever. You shot 0.00% from three. Thanks for playing!
+
+Actual Output- 
+You scored 6 points, which is more than Daffy Duck and less than Bugs Bunny. You shot 11.11% from three. Thanks for playing!
+You scored 30 points, which is more than Bugs Bunny and less than Porky Pig. You shot 66.67% from three. Thanks for playing!
+You scored 34 points, which is more than Bugs Bunny and less than Porky Pig. You shot 88.89% from three. Thanks for playing!
+You scored 0 points, which is more than nobody ever and less than everybody ever. You shot 0.00% from three. Thanks for playing!
+
+
+ 
